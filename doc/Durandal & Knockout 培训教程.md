@@ -3671,8 +3671,10 @@ Durandal项目中存在一种覆盖更新的特殊情形。通常是用定制化
 
 # 参考资料
 
-Durandal官方文档：http://durandaljs.com/docs.html
-
 Knockout官方文档：https://knockoutjs.com/documentation/introduction.html
 
 Knockout技术博客：https://www.cnblogs.com/smallprogram/p/5976954.html
+
+Durandal官方文档：http://durandaljs.com/docs.html
+
+教程源代码地址：     https://gitee.com/Allen_2017/durandal
