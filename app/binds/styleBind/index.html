@@ -1,0 +1,32 @@
+﻿<div class="container flex flex-column align-center">
+    <style>
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            color: #ffffff;
+            font-family: PingFangSC, PingFangSC-Regular;
+            font-weight: bold;
+            font-size: 0.2rem;
+            background-color: #2aabd2;
+        }
+    </style>
+
+    <div class="flex align-center">
+        <button class="btn btn-danger padding-l-lg padding-r-lg" data-bind="click: handleExpand">扩大</button>
+        <button class="btn btn-success padding-l-lg padding-r-lg margin-l-md" data-bind="click: handleShrink">缩小
+        </button>
+    </div>
+
+    <div class="box margin-t-md"
+         data-bind="style:{
+                         width: 2*ratio()+'rem',
+                         height: 2*ratio()+'rem',
+                         backgroundColor: ratio() > 2? '#ff0000': '#2aabd2'
+                     }">
+        Hello
+    </div>
+</div>
+

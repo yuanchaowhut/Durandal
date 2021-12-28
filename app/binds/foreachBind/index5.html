@@ -1,0 +1,60 @@
+﻿<div class="container">
+    <!--    <div class="flex">-->
+    <!--        <h4>区域：</h4>-->
+    <!--        <ul data-bind="foreach: districts">-->
+    <!--            <li>-->
+    <!--                <span data-bind="text: pname"></span>-->
+    <!--                <span>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</span>-->
+    <!--                <span data-bind="text: $root.province"></span>-->
+    <!--            </li>-->
+    <!--            <ul data-bind="foreach: cities">-->
+    <!--                <li class="padding-l-md">-->
+    <!--                    <span data-bind="text: cname"></span>-->
+    <!--                    <span>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;隶属于&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</span>-->
+    <!--                    <span data-bind="text: $parent.pname"></span>-->
+    <!--                    <span>-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;是-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</span>-->
+    <!--                    <span data-bind="text: $root.city"></span>-->
+    <!--                </li>-->
+    <!--                <ul data-bind="foreach: towns">-->
+    <!--                    <li class="padding-l-xlg">-->
+    <!--                        <span data-bind="text: tname"></span>-->
+    <!--                        <span>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;隶属于&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</span>-->
+    <!--                        <span data-bind="text: $parent.cname"></span>-->
+    <!--                        <span>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;是&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</span>-->
+    <!--                        <span data-bind="text: $root.town"></span>-->
+    <!--                    </li>-->
+    <!--                </ul>-->
+    <!--            </ul>-->
+    <!--        </ul>-->
+    <!--    </div>-->
+
+    <div class="flex">
+        <h4>区域：</h4>
+        <ul data-bind="foreach: {data: districts, as: 'item1'}">
+            <li>
+                <span data-bind="text: item1.pname"></span>
+                <span>------------------------</span>
+                <span data-bind="text: $root.province"></span>
+            </li>
+            <ul data-bind="foreach: {data: item1.cities, as: 'item2'}">
+                <li class="padding-l-md">
+                    <span data-bind="text: item2.cname"></span>
+                    <span>------------隶属于------------</span>
+                    <span data-bind="text: item1.pname"></span>
+                    <span>-------------是-----------</span>
+                    <span data-bind="text: $root.city"></span>
+                </li>
+                <ul data-bind="foreach: {data: item2.towns, as: 'item3'}">
+                    <li class="padding-l-xlg">
+                        <span data-bind="text: item3.tname"></span>
+                        <span>------------隶属于------------</span>
+                        <span data-bind="text: item2.cname"></span>
+                        <span>------------是------------</span>
+                        <span data-bind="text: $root.town"></span>
+                    </li>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+</div>
+

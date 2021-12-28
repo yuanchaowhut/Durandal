@@ -1,0 +1,31 @@
+﻿<div class="container">
+    <style>
+        .selected {
+            color: #ffffff;
+        }
+
+        .selected > td {
+            background-color: #2aabd2 !important;
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+    </style>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        </thead>
+        <tbody data-bind="foreach: dataList">
+        <tr class="cursor-pointer" data-bind="css:{'selected': selected(), 'font-bold': selected()}, click:$root.handleSelect">
+            <td data-bind="text: id"></td>
+            <td data-bind="text: name"></td>
+            <td data-bind="text: age"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,16 @@
+﻿<div class="container padding-20">
+    <h1 data-bind="text: title"></h1>
+    <button class="btn btn-primary margin-t-xs" data-bind="click: handleClick">父组件按钮</button>
+    <hr/>
+    <child-comp3
+            params='stringValue: "hello",
+            numericValue: 123,
+            boolValue: true,
+            objectValue: { a: 1, b: 2 },
+            dateValue: new Date(),
+            someValue: someValue,
+            someObservable: someObservable(),
+            someMethod: someMethod'>
+    </child-comp3>
+</div>
+

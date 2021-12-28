@@ -1,0 +1,40 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <!--计算属性取值-->
+            <form>
+                <div class="form-group">
+                    <label for="firstName">First Name：</label>
+                    <input id="firstName" data-bind="value: firstName, valueUpdate: 'afterkeydown'">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name：</label>
+                    <input id="lastName" data-bind="value: lastName, valueUpdate: 'afterkeydown'">
+                </div>
+                <div class="form-group">
+                    <label for="fullName">Full Name：</label>
+                    <input id="fullName" data-bind="value: fullName, valueUpdate: 'afterkeydown'">
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <!--计算属性赋值-->
+            <form>
+                <div class="form-group">
+                    <label for="carriageNumber">车厢号：</label>
+                    <input id="carriageNumber" data-bind="value: carriageNumber, valueUpdate: 'afterkeydown'">
+                </div>
+                <div class="form-group">
+                    <label for="seatNumber">座位号：</label>
+                    <input id="seatNumber" data-bind="value: seatNumber, valueUpdate: 'afterkeydown'">
+                </div>
+                <div class="form-group">
+                    <label for="ticket">车票：</label>
+                    <input id="ticket" data-bind="value: ticket, valueUpdate: 'afterkeydown'">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

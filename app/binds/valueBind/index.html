@@ -1,0 +1,29 @@
+﻿<div class="height-100 padding-20">
+    <!--    “change”（默认值） - 当失去焦点的时候更新view model的值，或者是<select> 元素被选择的时候。
+            “keyup” – 当用户敲完一个字符以后立即更新view model。
+            “keypress” – 当用户正在敲一个字符但没有释放键盘的时候就立即更新view model。不像 keyup，这个更新和keydown是一样的。
+            “afterkeydown” – 当用户开始输入字符的时候就更新view model。主要是捕获浏览器的keydown事件或异步handle事件。
+        上述这些选项，如果你想让你的view model进行实时更新，使用“afterkeydown”是最好的选择。-->
+
+    <form>
+        <div class="form-group">
+            <label for="default">change(默认)：</label>
+            <input id="default" class="form-control" placeholder="请输入" data-bind="value: content">
+        </div>
+        <div class="form-group">
+            <label for="keyup">keyup：</label>
+            <input id="keyup" class="form-control" placeholder="请输入" data-bind="value: content, valueUpdate: 'keyup'">
+        </div>
+        <div class="form-group">
+            <label for="keypress">keypress：</label>
+            <input id="keypress" class="form-control" placeholder="请输入"
+                   data-bind="value: content, valueUpdate: 'keypress'">
+        </div>
+        <div class="form-group">
+            <label for="afterkeydown">afterkeydown：</label>
+            <input id="afterkeydown" class="form-control" placeholder="请输入"
+                   data-bind="value: content, valueUpdate: 'afterkeydown'">
+        </div>
+    </form>
+</div>
+

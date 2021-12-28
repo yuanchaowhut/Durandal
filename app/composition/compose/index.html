@@ -1,0 +1,16 @@
+﻿<div class="container padding-20">
+    <div class="row">
+        <div class="col-md-12">
+            <input data-bind="value: content, event: {keyup: handleKeyUp}" style="width: 4rem; height: 0.36rem">
+            <button class="btn btn-primary" data-bind="click: handleClick">添加</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" data-bind="foreach: todoList" style="width: 4.8rem">
+            <div data-bind="compose: new $root.TodoItem($data)"></div>
+            <!--下面这种也可以-->
+<!--            <div data-bind="compose: {model: new $root.TodoItem($data), view: 'composition/compose/todoItem.html'}"></div>-->
+        </div>
+    </div>
+</div>
+

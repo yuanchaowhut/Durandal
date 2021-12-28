@@ -1,0 +1,18 @@
+﻿<div class="full-screen">
+  <div class="width-100 height-100">
+    <div class="col-md-2 height-100 padding-0">
+        <ul class="well nav nav-pills nav-stacked height-100 auto-scroll">
+            <li class="nav-header">Composition Examples</li>
+
+            <!--ko foreach: router.navigationModel()-->
+            <li data-bind="css: { active: isActive }">
+                <a data-bind="attr: { href: hash }, text: title"></a>
+            </li>
+            <!--/ko-->
+        </ul>
+    </div>
+    <div class="col-md-10 height-100 padding-0">
+      <!--ko router: { transition:'entrance', cacheViews:true }--><!--/ko-->
+    </div>
+  </div>
+</div>

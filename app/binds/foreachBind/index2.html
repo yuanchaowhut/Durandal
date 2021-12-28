@@ -1,0 +1,50 @@
+﻿<div class="container">
+    <style>
+        .headers {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            height: 0.4rem;
+            line-height: 0.4rem;
+            text-align: center;
+            color: white;
+            font-family: PingFangSC, PingFangSC-Medium;
+            font-weight: bold;
+            background: #3071a9;
+        }
+
+        .list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            text-align: center;
+            font-family: PingFangSC, PingFangSC-Regular;
+        }
+
+        ul.list:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        ul.list:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+    <ul class="flex align-center headers">
+        <li class="flex-1">序号</li>
+        <li class="flex-1">学号</li>
+        <li class="flex-1">姓名</li>
+        <li class="flex-1">年龄</li>
+    </ul>
+    <!--ko foreach: students-->
+    <ul class="flex align-center list">
+        <li class="flex-1" data-bind="text: $index() + 1"></li>
+        <li class="flex-1" data-bind="text: stuNo"></li>
+        <li class="flex-1" data-bind="text: stuName"></li>
+        <li class="flex-1" data-bind="text: age"></li>
+    </ul>
+    <!--/ko-->
+</div>
+

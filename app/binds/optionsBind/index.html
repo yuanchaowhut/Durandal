@@ -1,0 +1,87 @@
+﻿<div class="container">
+    <!--基础用法-->
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="fruits">水果：</label>
+            <select id="fruits" class="form-control" style="width: 200px"
+                    data-bind="options:fruits, optionsText:'name', optionsValue:'value', value:selectedFruit"></select>
+        </div>
+    </form>
+
+
+    <!--change事件-->
+    <form class="form-inline margin-t-md">
+        <div class="form-group">
+            <label for="hobbies">爱好：</label>
+            <select id="hobbies" class="form-control" style="width: 200px"
+                    data-bind="options:hobbies, optionsText:'name', optionsValue:'id', value:selectedHobbyId, event:{ change: $root.changeHobby }"></select>
+        </div>
+        <div class="form-group margin-l-lg">
+            <label>选中的爱好是：</label>
+            <span data-bind="text: selectedHobbyName"></span>
+        </div>
+    </form>
+
+
+    <!--默认的头optionsCaption-->
+    <form class="form-inline margin-t-md">
+        <div class="form-group">
+            <label for="languages">语言：</label>
+            <select id="languages" class="form-control" style="width: 200px"
+                    data-bind="options:languages, optionsText:'name', optionsValue:'id', optionsCaption:'请选择', value:languageId, event:{ change: $root.changeLanguage }"></select>
+        </div>
+        <div class="form-group margin-l-lg">
+            <label>选中的语言是：</label>
+            <span data-bind="text: languageName"></span>
+        </div>
+    </form>
+
+
+    <!--手动加一个头-->
+    <form class="form-inline margin-t-md">
+        <div class="form-group">
+            <label for="hairs">发型：</label>
+            <select id="hairs" class="form-control" style="width: 200px"
+                    data-bind="options:hairs, optionsText:'name', optionsValue:'id', value:hairId, event:{ change: $root.changeHair }"></select>
+        </div>
+        <div class="form-group margin-l-lg">
+            <label>选中的发型是：</label>
+            <span data-bind="text: hairName"></span>
+        </div>
+    </form>
+
+
+    <!--多选-->
+    <form class="form-inline margin-t-md">
+        <div class="form-group">
+            <label for="provinces">省份：</label>
+            <select id="provinces" multiple class="form-control" style="width: 200px"
+                    data-bind="options:provinces, optionsText:'name', optionsValue:'id', selectedOptions: provinceIds, event:{ change: $root.changeProvince }"></select>
+        </div>
+        <div class="form-group margin-l-lg">
+            <label>选中的省份是：</label>
+            <span data-bind="text: provinceNames"></span>
+        </div>
+    </form>
+
+
+    <!--默认选中1个-->
+    <form class="form-inline margin-t-md">
+        <div class="form-group">
+            <label for="brands">品牌：</label>
+            <select id="brands" class="form-control" style="width: 200px"
+                    data-bind="options:brands, optionsText:'name', optionsValue:'id', value:brandId, event:{ change: $root.changeBrand }"></select>
+        </div>
+    </form>
+
+
+    <!--默认选中多个-->
+    <form class="form-inline margin-t-md">
+        <div class="form-group">
+            <label for="units">企业：</label>
+            <select id="units" multiple class="form-control" style="width: 200px"
+                    data-bind="options:units, optionsText:'name', optionsValue:'id', selectedOptions:unitIds, event:{ change: $root.changeUnit }"></select>
+        </div>
+    </form>
+</div>
+

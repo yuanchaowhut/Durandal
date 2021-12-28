@@ -1,0 +1,11 @@
+﻿<div class="container-fluid">
+    <h1>Subscriber</h1>
+    <div class="margin-t-xs">
+        <button class="btn btn-success" data-bind="click: subscribe">监听事件</button>
+        <button class="btn btn-danger" data-bind="click: unsubscribe">取消监听</button>
+    </div>
+
+    <ul class="margin-t-xs" data-bind="foreach: received">
+        <li data-bind="text: $data"></li>
+    </ul>
+</div>

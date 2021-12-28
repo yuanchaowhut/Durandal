@@ -1,0 +1,998 @@
+/*1、因屏幕适配的需要统一使用rem为单位，设计稿1920时根元素的font-size为100px，页面元素转换rem时直接除以100即可，
+     比如：width:200px，相当于 width:2rem;
+  2、需要注意的是，当元素尺寸值小于或等于5px时，则仍使用px作为单位(不要换算为rem)，因为rem值过小时，浏览器可能会将其识别为0.
+*/
+
+/*---------------------------position(float、left、top、right、bottom)--------------------------*/
+.relative{position: relative;}
+.absolute{position: absolute;}
+.fixed{position: fixed;}
+
+.left-0{left:0}
+.left-10{left:10%}
+.left-15{left:15%}
+.left-20{left:20%}
+.left-30{left:30%}
+.left-40{left:40%}
+.left-50{left:50%}
+.left-60{left:60%}
+.left-70{left:70%}
+.left-80{left:80%}
+.left-90{left:90%}
+.left-100{left:100%}
+
+.right-0{right:0}
+.right-10{right:10%}
+.right-15{right:15%}
+.right-20{right:20%}
+.right-30{right:30%}
+.right-40{right:40%}
+.right-50{right:50%}
+.right-60{right:60%}
+.right-70{right:70%}
+.right-80{right:80%}
+.right-90{right:90%}
+.right-100{right:100%}
+
+.top-0{top:0}
+.top-10{top:10%}
+.top-15{top:15%}
+.top-20{top:20%}
+.top-30{top:30%}
+.top-40{top:40%}
+.top-50{top:50%}
+.top-60{top:60%}
+.top-70{top:70%}
+.top-80{top:80%}
+.top-90{top:90%}
+.top-100{top:100%}
+
+.bottom-0{bottom:0}
+.bottom-10{bottom:10%}
+.bottom-15{bottom:15%}
+.bottom-20{bottom:20%}
+.bottom-30{bottom:30%}
+.bottom-40{bottom:40%}
+.bottom-50{bottom:50%}
+.bottom-60{bottom:60%}
+.bottom-70{bottom:70%}
+.bottom-80{bottom:80%}
+.bottom-90{bottom:90%}
+.bottom-100{bottom:100%}
+
+.z-index-1{z-index: 1}
+.z-index-2{z-index: 2}
+.z-index-3{z-index: 3}
+.z-index-4{z-index: 4}
+.z-index-5{z-index: 5}
+.z-index-6{z-index: 6}
+.z-index-7{z-index: 7}
+.z-index-8{z-index: 8}
+.z-index-9{z-index: 9}
+.z-index-10{z-index: 10}
+.z-index-20{z-index: 20}
+.z-index-30{z-index: 30}
+.z-index-50{z-index: 50}
+.z-index-100{z-index: 100}
+/*---------------------------size(width、height、margin、padding、border)--------------------------*/
+.width-2{width:2%!important;}
+.width-4{width:4%!important;}
+.width-5{width:5%!important;}
+.width-10{width:10%!important;}
+.width-15{width:15%!important;}
+.width-20{width:20%!important;}
+.width-25{width:25%!important;}
+.width-30{width:30%!important;}
+.width-33{width:33%!important;}
+.width-35{width:35%!important;}
+.width-40{width:40%!important;}
+.width-45{width:45%!important;}
+.width-50{width:50%!important;}
+.width-55{width:55%!important;}
+.width-60{width:60%!important;}
+.width-65{width:65%!important;}
+.width-70{width:70%!important;}
+.width-75{width:75%!important;}
+.width-80{width:80%!important;}
+.width-85{width:85%!important;}
+.width-90{width:90%!important;}
+.width-95{width:95%!important;}
+.width-100{width:100%!important;}
+
+.height-10{height:10%!important;}
+.height-15{height:15%!important;}
+.height-20{height:20%!important;}
+.height-25{height:25%!important;}
+.height-30{height:30%!important;}
+.height-33{height:33%!important;}
+.height-35{height:35%!important;}
+.height-40{height:40%!important;}
+.height-45{height:45%!important;}
+.height-50{height:50%!important;}
+.height-55{height:55%!important;}
+.height-60{height:60%!important;}
+.height-65{height:65%!important;}
+.height-70{height:70%!important;}
+.height-75{height:75%!important;}
+.height-80{height:80%!important;}
+.height-85{height:85%!important;}
+.height-90{height:90%!important;}
+.height-95{height:95%!important;}
+.height-100{height:100%!important;}
+
+.max-width-2{max-width:2%!important;}
+.max-width-4{max-width:4%!important;}
+.max-width-5{max-width:5%!important;}
+.max-width-10{max-width:10%!important;}
+.max-width-15{max-width:15%!important;}
+.max-width-20{max-width:20%!important;}
+.max-width-25{max-width:25%!important;}
+.max-width-30{max-width:30%!important;}
+.max-width-33{max-width:33%!important;}
+.max-width-35{max-width:35%!important;}
+.max-width-40{max-width:40%!important;}
+.max-width-45{max-width:45%!important;}
+.max-width-50{max-width:50%!important;}
+.max-width-55{max-width:55%!important;}
+.max-width-60{max-width:60%!important;}
+.max-width-65{max-width:65%!important;}
+.max-width-70{max-width:70%!important;}
+.max-width-75{max-width:75%!important;}
+.max-width-80{max-width:80%!important;}
+.max-width-85{max-width:85%!important;}
+.max-width-90{max-width:90%!important;}
+.max-width-95{max-width:95%!important;}
+.max-width-100{max-width:100%!important;}
+
+.max-height-10{max-height:10%!important;}
+.max-height-15{max-height:15%!important;}
+.max-height-20{max-height:20%!important;}
+.max-height-25{max-height:25%!important;}
+.max-height-30{max-height:30%!important;}
+.max-height-33{max-height:33%!important;}
+.max-height-35{max-height:35%!important;}
+.max-height-40{max-height:40%!important;}
+.max-height-45{max-height:45%!important;}
+.max-height-50{max-height:50%!important;}
+.max-height-55{max-height:55%!important;}
+.max-height-60{max-height:60%!important;}
+.max-height-65{max-height:65%!important;}
+.max-height-70{max-height:70%!important;}
+.max-height-75{max-height:75%!important;}
+.max-height-80{max-height:80%!important;}
+.max-height-85{max-height:85%!important;}
+.max-height-90{max-height:90%!important;}
+.max-height-95{max-height:95%!important;}
+.max-height-100{max-height:100%!important;}
+
+
+.margin-0{margin:0}
+.margin-5{margin:5px}
+.margin-10{margin:0.1rem}
+.margin-15{margin:0.15rem}
+.margin-20{margin:0.2rem}
+.margin-t-xlg {margin-top: 0.5rem}
+.margin-t-lg {margin-top: 0.25rem}
+.margin-t-md {margin-top: 0.2rem}
+.margin-t-sm {margin-top: 0.15rem}
+.margin-t-xs {margin-top: 0.1rem}
+.margin-t-xxs {margin-top: 5px}
+.margin-t-0 {margin-top: 0}
+.margin-l-xlg {margin-left: 0.5rem}
+.margin-l-lg {margin-left: 0.25rem}
+.margin-l-md {margin-left: 0.2rem}
+.margin-l-sm {margin-left: 0.15rem}
+.margin-l-xs {margin-left: 0.1rem}
+.margin-l-xxs {margin-left: 5px}
+.margin-l-0 {margin-left: 0}
+.margin-r-xlg {margin-right: 0.5rem}
+.margin-r-lg {margin-right: 0.25rem}
+.margin-r-md {margin-right: 0.2rem}
+.margin-r-sm {margin-right: 0.15rem}
+.margin-r-xs {margin-right: 0.1rem}
+.margin-r-xxs {margin-right: 5px}
+.margin-r-0 {margin-right: 0}
+.margin-b-xlg {margin-bottom: 0.5rem}
+.margin-b-lg {margin-bottom: 0.25rem}
+.margin-b-md {margin-bottom: 0.2rem}
+.margin-b-sm {margin-bottom: 0.15rem}
+.margin-b-xs {margin-bottom: 0.1rem}
+.margin-b-xxs {margin-bottom: 5px}
+.margin-b-0 {margin-bottom: 0}
+
+.padding-0{padding:0!important;}
+.padding-5{padding:5px!important;}
+.padding-10{padding:0.1rem!important;}
+.padding-15{padding:0.15rem!important;}
+.padding-20{padding:0.2rem!important;}
+.padding-t-xlg {padding-top: 0.5rem!important;}
+.padding-t-lg {padding-top: 0.25rem!important;}
+.padding-t-md {padding-top: 0.2rem!important;}
+.padding-t-sm {padding-top: 0.15rem!important;}
+.padding-t-xs {padding-top: 0.1rem!important;}
+.padding-t-xxs {padding-top: 5px!important;}
+.padding-t-0 {padding-top: 0!important;}
+.padding-l-xlg {padding-left: 0.5rem!important;}
+.padding-l-lg {padding-left: 0.25rem!important;}
+.padding-l-md {padding-left: 0.2rem!important;}
+.padding-l-sm {padding-left: 0.15rem!important;}
+.padding-l-xs {padding-left: 0.1rem!important;}
+.padding-l-xxs {padding-left: 5px!important;}
+.padding-l-0 {padding-left: 0!important;}
+.padding-r-xlg {padding-right: 0.5rem!important;}
+.padding-r-lg {padding-right: 0.25rem!important;}
+.padding-r-md {padding-right: 0.2rem!important;}
+.padding-r-sm {padding-right: 0.15rem!important;}
+.padding-r-xs {padding-right: 0.1rem!important;}
+.padding-r-xxs {padding-right: 5px!important;}
+.padding-r-0 {padding-right: 0!important;}
+.padding-b-xlg {padding-bottom: 0.5rem!important;}
+.padding-b-lg {padding-bottom: 0.25rem!important;}
+.padding-b-md {padding-bottom: 0.2rem!important;}
+.padding-b-sm {padding-bottom: 0.15rem!important;}
+.padding-b-xs {padding-bottom: 0.1rem!important;}
+.padding-b-xxs {padding-bottom: 5px!important;}
+.padding-b-0 {padding-bottom: 0!important;}
+
+.border-none{border: none!important;}
+.border-1{border: 1px solid;}
+.border-2{border: 2px solid;}
+.border-raduis-5{border-radius:5px;}
+.border-raduis-10{border-radius:0.1rem;}
+.border-b-default {border-bottom: 1px solid #E4E4E4}
+.border-rad-1{border-radius: 1px;}
+.border-rad-2{border-radius: 2px;}
+.border-rad-3{border-radius: 3px;}
+.border-rad-4{border-radius: 4px;}
+.border-rad-5{border-radius: 5px;}
+.border-rad-6{border-radius: 6px;}
+.border-rad-7{border-radius: 7px;}
+.border-rad-8{border-radius: 8px;}
+.border-rad-9{border-radius: 9px;}
+.border-rad-10{border-radius: 10px;}
+.border-rad-circle{border-radius: 50%;}
+
+/*-----------------------------------------------text----------------------------------------------*/
+.text-align-right {text-align: right}
+
+.text-align-left {text-align: left}
+
+.text-align-center {text-align: center}
+
+.font-size-xlg {font-size: 0.2rem!important}
+
+.font-size-lg {font-size: 0.18rem!important}
+
+.font-size-normal {font-size: 0.16rem!important}
+
+.font-size-md {font-size: 0.14rem!important;}
+
+.font-size-sm {font-size: 0.12rem!important;}
+
+.font-weight-400 {font-weight: 400!important}
+
+.font-weight-500 {font-weight: 500!important}
+
+.font-weight-600 {font-weight: 600!important}
+
+.font-weight-700 {font-weight: 700!important}
+
+.text-blue {color: rgba(51,136,255,1);}
+
+.text-green {color: rgb(87, 217, 110);}
+
+.text-red {color: rgba(255,0,0,1);}
+
+.text-lighter {color: rgba(102,119,153,1);}
+
+.text-yellow {color: rgba(245,166,35,1);}
+
+.text-black {color: #000000 !important;}
+
+.text-black-sm {color: #223355 !important;}
+
+.text-black-xs {color: #667799 !important;}
+
+.text-white {color: #ffffff !important;}
+
+.text-grey {color: #cccccc !important;}
+
+.text-grey-md {color: #a6a6a6 !important;}
+
+.text-single-line{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.multiple-ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.auto-scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.auto-scroll::-webkit-scrollbar {
+    width: 0.08rem;
+    height: 0.08rem;
+}
+.auto-scroll::-webkit-scrollbar-track{
+    background: rgb(239, 239, 239);
+    border-radius:2px;
+}
+.auto-scroll::-webkit-scrollbar-thumb{
+    background: #bfbfbf;
+    border-radius:0.1rem;
+}
+.auto-scroll::-webkit-scrollbar-thumb:hover{
+    background: rgba(120,120,120,1);;
+}
+.auto-scroll::-webkit-scrollbar-corner{
+    background: #179a16;
+}
+
+.auto-scroll-screen {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.auto-scroll-screen::-webkit-scrollbar {
+    width: 0.08rem;
+    height: 0.08rem;
+}
+.auto-scroll-screen::-webkit-scrollbar-track{
+    background: #000066;
+    border-radius:2px;
+}
+.auto-scroll-screen::-webkit-scrollbar-thumb{
+    background: #1E70DD;
+    border-radius:0.1rem;
+}
+.auto-scroll-screen::-webkit-scrollbar-thumb:hover{
+    background: #268BDF;
+}
+.auto-scroll-screen::-webkit-scrollbar-corner{
+    background: #179a16;
+}
+
+/*---------------------------------------------layout------------------------------------------------*/
+.block {
+    display: block
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.none {
+    display: none
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.flex {
+    display: flex
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.align-end{
+    align-items: flex-end;
+}
+
+.flex-align-center{
+    display:flex;
+    align-items: center;
+}
+
+.flex-align-start{
+    display: flex;
+    align-items: flex-start;
+}
+
+.flex-align-end{
+    display: flex;
+    align-items: flex-end;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.flex-justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-justify-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-justify-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.flex-shrink-1 {
+    flex-shrink: 1;
+}
+
+.flex-auto{
+    flex: auto;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.flex-per-10 {flex: 10%!important;}
+.flex-per-20 {flex: 20%!important;}
+.flex-per-30 {flex: 30%!important;}
+.flex-per-40 {flex: 40%!important;}
+.flex-per-50 {flex: 50%!important;}
+.flex-per-60 {flex: 60%!important;}
+.flex-per-70 {flex: 70%!important;}
+.flex-per-80 {flex: 80%!important;}
+.flex-per-90 {flex: 90%!important;}
+.flex-per-100 {flex: 100%!important;}
+
+/*---------------------------------------------colors------------------------------------------------*/
+.color-white{
+    color: #ffffff;
+}
+
+.color-light-blue{
+    color: #3388FF;
+}
+
+.color-light-gray{
+    color: #C7CDDA;
+}
+
+.bg-white {
+    background: #ffffff !important;
+}
+
+.bg-gray {
+    background: rgb(238, 242, 245);
+}
+
+/*-----------------------------------------------pages----------------------------------------------*/
+.full-screen {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------------------------------------------form(表单元素)----------------------------------------------*/
+.button-sm-blue-o {
+    border: 1px solid rgba(51, 136, 255, 1);
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(51, 136, 255, 1);
+    font-size: 0.12rem;
+    padding: 3px 0.1rem;
+    font-weight: bold;
+    outline: medium;
+}
+
+.button-md-blue-o {
+    border: 1px solid rgba(51, 136, 255, 1);
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(51, 136, 255, 1);
+    font-size: 0.12rem;
+    padding: 3px 0.2rem;
+    font-weight: bold;
+    outline: medium;
+}
+
+.button-sm-red-o {
+    border: 1px solid rgba(255, 68, 68, 1);
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(255, 68, 68, 1);
+    font-size: 0.12rem;
+    padding: 3px 0.1rem;
+    font-weight: bold;
+    outline: medium;
+}
+
+.button-md-red-o {
+    border: 1px solid rgba(255, 68, 68, 1);
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(255, 68, 68, 1);
+    font-size: 0.12rem;
+    padding: 3px 0.2rem;
+    font-weight: bold;
+    outline: medium;
+}
+
+.button-sm-red-o:hover,
+.button-sm-blue-o:hover,
+.button-md-default-o:hover,
+.button-md-red-o:hover,
+.button-md-blue-o:hover,
+.button-md-green-o:hover {
+    background-color: rgba(235, 235, 235, 0.85);
+}
+
+.button-sm-red-o:active,
+.button-sm-blue-o:active,
+.button-md-default-o:active,
+.button-md-red-o:active,
+.button-md-blue-o:active,
+.button-md-green-o:active {
+    background-color: rgba(200, 200, 200, 0.85);
+}
+
+.button-md-green-o {
+    border: 1px solid #11c79b;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 1);
+    color: #11c79b;
+    font-size: 0.12rem;
+    padding: 3px 0.2rem;
+    font-weight: bold;
+    outline: medium;
+}
+
+.button-md-default-o {
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(68, 85, 119, 1);
+    font-size: 0.12rem;
+    padding: 3px 0.2rem;
+    font-weight: bold;
+    outline: medium;
+}
+
+.button-md-blue {
+    border: 1px solid rgba(51, 136, 255, 1);
+    border-radius: 2px;
+    background-color: rgba(51, 136, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.12rem;
+    padding: 3px 0.2rem;
+    font-weight: bold;
+    outline: medium;
+}
+
+.button-sm-blue {
+    border: 1px solid rgba(51, 136, 255, 1);
+    border-radius: 2px;
+    background-color: rgba(51, 136, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.12rem;
+    padding: 3px 0.1rem;
+    font-weight: bold;
+    outline: medium;
+}
+
+.button-sm-blue:hover,
+.button-md-blue:hover {
+    background-color: rgba(51, 120, 255, 1);
+}
+
+.button-sm-blue:active,
+.button-md-blue:active {
+    background-color: #295dae;
+}
+
+.button-md-green {
+    border: 1px solid #4ad370;
+    border-radius: 2px;
+    background-color: #4ad370;
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.12rem;
+    padding: 3px 0.2rem;
+    font-weight: bold;
+    outline: medium;
+}
+
+.button-md-green:hover {
+    opacity: 0.7;
+}
+
+.button-md-green:active {
+    opacity: 0.9;
+}
+
+.button-sm-deep-blue-o {
+    border: 1px solid #295dae;
+    border-radius: 2px;
+    background-color: #1c3279;
+    color: #37aeff;
+    font-size: 0.12rem;
+    padding: 3px 0.1rem;
+    font-weight: bold;
+    outline: medium;
+}
+
+.button-md-deep-blue-o {
+    border: 1px solid #295dae;
+    border-radius: 2px;
+    background-color: #1c3279;
+    color: #37aeff;
+    font-size: 0.12rem;
+    padding: 3px 0.2rem;
+    font-weight: bold;
+    outline: medium;
+}
+
+.button-sm-deep-blue-o:hover,
+.button-md-deep-blue-o:hover {
+    background-color: #0a255f;
+}
+
+/*------------------------------------------------小三角----------------------------------------------*/
+.triangle-up {
+    width: 0;
+    height: 0;
+    *width: 0.2rem;
+    *height: 0.2rem;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    border-width: 0.1rem;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #12215a transparent;
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    *width: 0.2rem;
+    *height: 0.2rem;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    border-width: 0.1rem;
+    border-style: solid dashed dashed dashed;
+    border-color: #12215a transparent transparent transparent;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    *width: 0.2rem;
+    *height: 0.2rem;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    border-width: 0.1rem;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #12215a transparent transparent;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    *width: 0.2rem;
+    *height: 0.2rem;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    border-width: 0.1rem;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #12215a;
+}
+
+.tri-right-top {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #000000;
+    background: #ffffff;
+}
+
+.tri-right-top:before,
+.tri-right-top:after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+}
+
+.tri-right-top:before {
+    top: 0.2rem;
+    border-width: 0.12rem;
+    border-left-color: #000000;
+}
+
+.tri-right-top:after {
+    top: 0.2rem;
+    border-width: 0.1rem;
+    border-left-color: #ffffff;
+}
+
+.tri-left-bottom {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #000000;
+}
+
+.tri-left-bottom:before,
+.tri-left-bottom:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+}
+
+.tri-left-bottom:before {
+    left: 0.18rem;
+    border-width: 0.12rem;
+    border-top-color: #000000;
+}
+
+.tri-left-bottom:after {
+    left: 0.2rem;
+    border-width: 0.1rem;
+    border-top-color: #ffffff;
+}
+
+/*--------------------------------------overflow---------------------------------------------*/
+.overflow-auto {
+    overflow: auto;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-auto-x {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.overflow-auto-y {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/*--------------------------------------------------------小图标的尺寸---------------------------------------------------*/
+.icon-xxs {
+    width: 0.12rem;
+    height: 0.12rem;
+}
+
+.icon-xs {
+    width: 0.16rem;
+    height: 0.16rem;
+}
+
+.icon-sm {
+    width: 0.2rem;
+    height: 0.2rem;
+}
+
+.icon-md {
+    width: 0.24rem;
+    height: 0.24rem;
+}
+
+.icon-lg {
+    width: 0.28rem;
+    height: 0.28rem;
+}
+
+.icon-xlg {
+    width: 0.32rem;
+    height: 0.32rem;
+}
+
+/*绝对定位水平居中,父容器需relative*/
+.abs-x-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*绝对定位垂直居中,父容器需relative*/
+.abs-y-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*绝对定位水平垂直居中,父容器需relative*/
+.abs-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+/*-------------------------------------------------------flex网格布局实现(2种实现,一行放4个)----------------------------------------------*/
+.flex-grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.flex-grid-item {
+    width: calc((100% - 0.6rem) / 4);
+    height: 1.2rem;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+/*表示第1，5，9个元素不需要左间距*/
+.flex-grid-item:nth-child(4n + 1) {
+    margin-left: 0;
+}
+
+/*表示前4个元素不需要上间距*/
+.flex-grid-item:nth-child(-n + 4) {
+    margin-top: 0;
+}
+
+.simple-grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.simple-grid-item-warpper {
+    width: 25%;
+    padding-right: 0.2rem;
+    padding-bottom: 0.2rem;
+    box-sizing: border-box;
+}
+
+.simple-grid-item {
+    width: 100%;
+    height: 1.2rem;
+}
+
+/*------------------------------------------------------common-tab开始------------------------------------------------*/
+.common-tab-list {
+    display: flex;
+    align-items: center;
+    height: 0.5rem;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.common-tab-item {
+    max-width: 1.5rem;
+    height: 100%;
+    line-height: 0.5rem;
+    padding: 0 0.2rem;
+    color: #223355;
+    font-size: 0.18rem;
+    font-weight: 400;
+    font-family: PingFangSC, PingFangSC-Regular;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.common-tab-item-selected {
+    border-bottom: 4px solid #3388ff;
+    color: #3388ff;
+    font-weight: 500;
+    font-family: PingFangSC, PingFangSC-Medium;
+}
+/*------------------------------------------------------common-tab结束------------------------------------------------*/
+
+/*------------------------------------------------------小图标、标题垂直居中开始-------------------------------------------*/
+.common-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.common-item-icon {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.common-item-title {
+    height: 0.2rem;
+    margin-top: 0.1rem;
+    color: #142841;
+    font-size: 0.14rem;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    text-align: center;
+}
+
+.common-item-wrapper:hover {
+    background: #f2f2f2;
+}
+/*------------------------------------------------------小图标、标题垂直居中结束-------------------------------------------*/
+.common-field-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.common-field-label {
+    color: #667799;
+    font-size: 0.16rem;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+}
+
+.common-field-value {
+    color: #223355;
+    font-size: 0.16rem;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+}

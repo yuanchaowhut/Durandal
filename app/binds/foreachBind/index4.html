@@ -1,0 +1,20 @@
+﻿<div class="container">
+    <div class="flex">
+        <h4>球类运动：</h4>
+        <ul class="flex" data-bind="foreach: {data: sports, as: 'item'}">
+            <li class="margin-l-md" data-bind="text: item.name"></li>
+        </ul>
+    </div>
+    <hr/>
+
+    <div class="flex">
+        <h4>区域：</h4>
+        <ul data-bind="foreach: {data: districts, as: 'province'}">
+            <li data-bind="text: province.pname"></li>
+            <ul data-bind="foreach: {data: province.cities, as: 'city'}">
+                <li class="padding-l-md" data-bind="text: city.cname"></li>
+            </ul>
+        </ul>
+    </div>
+</div>
+

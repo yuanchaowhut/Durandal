@@ -1,0 +1,58 @@
+﻿<div class="container">
+    <!--radio-->
+    <div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="gender" id="male" value="1" data-bind="checked: gender">美女
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="gender" id="female" value="2" data-bind="checked: gender">帅哥
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="gender" id="unknown" value="3" data-bind="checked: gender">未知
+            </label>
+        </div>
+
+        <div class="flex">
+            <span>gender值：</span>
+            <span data-bind="text: gender"></span>
+        </div>
+        <div class="flex margin-t-md">
+            <button class="btn btn-primary" data-bind="click: printGender">打印gender类型</button>
+            <span class="margin-l-md font-size-normal" data-bind="text: genderType"></span>
+        </div>
+    </div>
+
+
+    <!--checkbox-->
+    <div class="margin-t-lg">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="1" data-bind="checked: balls">篮球
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="2" data-bind="checked: balls">羽毛球
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="3" data-bind="checked: balls">乒乓球
+            </label>
+        </div>
+        <div class="flex">
+            <span>balls值：</span>
+            <span data-bind="text: balls().join(',')"></span>
+        </div>
+        <div class="flex margin-t-md">
+            <button class="btn btn-primary" data-bind="click: printBalls">打印balls类型</button>
+            <span class="margin-l-md font-size-normal" data-bind="text: ballsType"></span>
+        </div>
+    </div>
+</div>
+

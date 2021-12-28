@@ -1,0 +1,32 @@
+﻿<div class="container">
+    <!--绑定src属性-->
+    <div class="flex">
+        <label>绑定src属性</label>
+        <img class="img-circle margin-l-lg" width="200" height="200" alt="" data-bind="attr:{src: image}">
+    </div>
+
+    <!--绑定href属性-->
+    <div class="flex margin-t-md">
+        <label>绑定href属性</label>
+        <a class="margin-l-lg" data-bind="attr:{href: link}">打开链接</a>
+    </div>
+
+    <!--绑定title属性-->
+    <div class="flex margin-t-md">
+        <label>绑定title属性</label>
+        <span class="text-single-line margin-l-lg" style="width: 2rem" data-bind="text: introduction, attr:{title: introduction}"></span>
+    </div>
+
+    <!--绑定自定义属性1-->
+    <div class="flex margin-t-md">
+        <label>绑定自定义属性1</label>
+        <span class="margin-l-lg" data-bind="text: customAttr1, attr:{myAttr: customAttr1}"></span>
+    </div>
+
+    <!--绑定自定义属性2-->
+    <div class="flex margin-t-md">
+        <label>绑定自定义属性2</label>
+        <span class="margin-l-lg" data-bind="text: customAttr2, attr:{'my-attr': customAttr2}"></span>
+    </div>
+</div>
+

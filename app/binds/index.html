@@ -1,0 +1,38 @@
+﻿<div class="full-screen">
+  <div class="width-100 height-100">
+    <div class="col-md-2 height-100 padding-0">
+        <ul class="well nav nav-pills nav-stacked height-100 auto-scroll">
+            <li class="nav-header">Basic Examples</li>
+            <!--ko foreach: basicSamples-->
+            <li data-bind="css: { active: isActive }">
+                <a data-bind="attr: { href: hash }, text: title"></a>
+            </li>
+            <!--/ko-->
+
+            <li class="nav-header">Control Examples</li>
+            <!--ko foreach: controlSamples-->
+            <li data-bind="css: { active: isActive }">
+                <a data-bind="attr: { href: hash }, text: title"></a>
+            </li>
+            <!--/ko-->
+
+            <li class="nav-header">Event Examples</li>
+            <!--ko foreach: eventSamples-->
+            <li data-bind="css: { active: isActive }">
+                <a data-bind="attr: { href: hash }, text: title"></a>
+            </li>
+            <!--/ko-->
+
+            <li class="nav-header">Custom Examples</li>
+            <!--ko foreach: customSamples-->
+            <li data-bind="css: { active: isActive }">
+                <a data-bind="attr: { href: hash }, text: title"></a>
+            </li>
+            <!--/ko-->
+        </ul>
+    </div>
+    <div class="col-md-10 height-100 padding-0">
+      <!--ko router: { transition:'entrance', cacheViews:true }--><!--/ko-->
+    </div>
+  </div>
+</div>

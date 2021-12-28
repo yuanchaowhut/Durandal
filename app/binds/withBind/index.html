@@ -1,0 +1,24 @@
+﻿<div class="container">
+    <div class="flex">
+        <h4>用户信息：</h4>
+        <ul data-bind="with: humanInfo">
+            <li data-bind="text: humanID"></li>
+            <li data-bind="text: humanName"></li>
+            <li data-bind="text: phone"></li>
+            <li data-bind="text: email"></li>
+            <li data-bind="text: job"></li>
+        </ul>
+    </div>
+    <hr/>
+
+    <div class="flex">
+        <h4>定位信息：</h4>
+        <div data-bind="with: position">
+            <span data-bind="text: address"></span>
+            <!--ko with: coords-->
+            <span data-bind="text: '(' + coordX + ',' + coordY + ')'"></span>
+            <!--/ko-->
+        </div>
+    </div>
+</div>
+
