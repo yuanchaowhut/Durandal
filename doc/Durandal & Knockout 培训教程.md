@@ -3434,6 +3434,9 @@ http {
 				location /eUrbanMIS1201 {
             proxy_pass http://123.56.170.103:8080/eUrbanMIS1201;
             proxy_set_header Cookie "SESSION=2fcf13ee-4172-471a-97f3-72633fcf89e6";
+      			#如果现场有权限校验(403)则可以配置下面这些Header来伪造现场环境
+						proxy_set_header Host "120.221.95.12:8080";
+						proxy_set_header Referer "http://120.221.95.12:8080/eUrbanMIS";
         }
 
         #生产环境
