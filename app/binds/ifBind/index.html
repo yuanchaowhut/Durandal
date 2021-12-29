@@ -1,19 +1,21 @@
-﻿<div class="row">
-    <div class="col-md-6">
-        <button class="btn btn-primary" data-bind="text: toggleText, click: toggle"></button>
-        <h1 data-bind="if: show">Hello World</h1>
-        <!--注意下面这个不是注释，而是ko的一种语法规则-->
-        <!--ko if: show-->
-        <h1>Hello KO</h1>
-        <!--/ko-->
-    </div>
+﻿<div class="container padding-10">
+    <div class="row">
+        <div class="col-md-6">
+            <button class="btn btn-primary" data-bind="text: toggleText, click: toggle"></button>
+            <h1 data-bind="if: show">Hello World</h1>
+            <!--注意下面这个不是注释，而是ko的一种语法规则-->
+            <!--ko if: show-->
+            <h1>Hello KO</h1>
+            <!--/ko-->
+        </div>
 
-    <div class="col-md-6">
-        <button class="btn btn-primary" data-bind="text: changeText, click: change"></button>
-        <h1 data-bind="ifnot: hiden">Hello Durandal</h1>
-        <!--注意下面这个不是注释，而是ko的一种语法规则-->
-        <!--ko ifnot: hiden-->
-        <h1>Hello JS</h1>
-        <!--/ko-->
+        <div class="col-md-6">
+            <button class="btn btn-primary" data-bind="text: changeText, click: change"></button>
+            <h1 data-bind="ifnot: hiden">Hello Durandal</h1>
+            <!--注意下面这个不是注释，而是ko的一种语法规则-->
+            <!--ko ifnot: hiden-->
+            <h1>Hello JS</h1>
+            <!--/ko-->
+        </div>
     </div>
 </div>

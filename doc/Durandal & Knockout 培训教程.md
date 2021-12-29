@@ -77,7 +77,7 @@ KO的三个内置核心功能：
 
 2. **绑定**
 
-    在html中使用 **data-bind**  声明式绑定之前监控的变量。绑定值可以是单个值，变量或字面值或几乎任何有效的JavaScript表达式。
+    在html中使用 **data-bind**  声明式绑定之前监控的变量。绑定值可以是单个值，变量或几乎任何有效的JavaScript表达式。
 
     ```html
     <h1 data-bind="text: content"></h1>	
@@ -974,7 +974,7 @@ define(['durandal/app', 'durandal/system', 'knockout'], function (app, system, k
 
 ## 计算属性
 
-计算属性是knockout中非常重要的一个功能，它与普通的KO变量有所不同，它是依赖其它KO变量而存在的。当其依赖的KO变量值发生变化的时，计算属性会重新计算，反之则使用缓存中的属性值。计算属性和其它KO变量一样，都是响应式的，只不过它必须依赖某一个数据实现，并且只有它依赖的数据的值改变了，它才会更新。合理使用计算属性常常能帮我们省很多事。KO3.2.0之前计算属性使用的是 ko.computed()，3.2.0之后新推出 ko.pureComputed()，所以现在我们主要使用 puteComputed。按照官方的说法是后者可以：防止内存泄露、减少计算开销。关于computed深层次的讨论请参阅[这里](https://www.cnblogs.com/smallprogram/category/883528.html?page=2)，总结的非常到位，我们不再赘述。
+计算属性是knockout中非常重要的一个功能，它与普通的KO变量有所不同，它是依赖其它KO变量而存在的。当其依赖的KO变量值发生变化的时，计算属性会重新计算，反之则使用缓存中的属性值。计算属性和其它KO变量一样，都是响应式的，只不过它必须依赖某一个数据实现，并且只有它依赖的数据的值改变了，它才会更新。合理使用计算属性常常能帮我们省很多事。KO3.2.0之前计算属性使用的是 ko.computed()，3.2.0之后新推出 ko.pureComputed()，所以现在我们主要使用 pureComputed。按照官方的说法是后者可以：防止内存泄露、减少计算开销。关于computed深层次的讨论请参阅[这里](https://www.cnblogs.com/smallprogram/category/883528.html?page=2)，总结的非常到位，我们不再赘述。
 
 格式1：ko.pureComputed(fn, context)
 
@@ -986,7 +986,7 @@ define(['durandal/app', 'durandal/system', 'knockout'], function (app, system, k
 
 ​                 },
 
-​                 Write: function(){
+​                 write: function(){
 
 ​	                    code...
 
@@ -2002,6 +2002,14 @@ define(['durandal/app', 'durandal/system', 'knockout'], function (app, system, k
 自定义绑定我们在实际开发中用的比较少，因为Knockout内置的这些绑定基本上就能满足绝大多数需求，不过有时候自定义绑定确实可以解决一些问题。
 
 格式：data-bind="自定义名称:  xxx"
+
+​			ko.bindingHandlers.自定义名称 = {
+
+​					init:  function(){},
+
+​					update: function(){}
+
+​			}
 
 示例：
 
@@ -3024,7 +3032,7 @@ Nginx是一个轻量级Web服务器，它不仅是一个高性能的HTTP和反�
 
 - 其它说明
 
- 	  由于公司的前端项目主要有2大类：
+​		由于公司的前端项目主要有2大类：
 
 ​		1.Durandal+Knockout 为主的老项目(如：城管、监督指挥大屏、渣土子系统等 );  
 
